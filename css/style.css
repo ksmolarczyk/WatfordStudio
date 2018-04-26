@@ -1,0 +1,32 @@
+:root {
+    --color: #27C7AB;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width:1035px;
+    margin:0 auto;
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.logoPageHeader {
+    width: auto;
+    height: 90px;
+    left: 40%;
+    position: relative;
+}
+.pageHeader {
+    background: #000;
+    height: 90px;
+    z-index: 10;
+    position: relative;
+
+}
