@@ -17,6 +17,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+
 .logoPageHeader {
     width: auto;
     height: 90px;
@@ -29,4 +30,36 @@ body {
     z-index: 10;
     position: relative;
 
+}
+.headerNavList{
+    width: auto;
+    height: 40px;
+    background: grey;
+    position: relative;
+}
+
+
+.page-nav {
+    float:right;
+}
+.page-nav-list {}
+.page-nav-list li {
+    float:left;
+    position: relative;
+}
+.page-nav-list a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:14px;
+    line-height: 40px;
+    padding:0 25px;
+    display: block;
+}
+.page-nav-list a:hover {
+    color: var(--color);
+}
+.page-nav-list li:hover > a {
+    color: var(--color);
 }
