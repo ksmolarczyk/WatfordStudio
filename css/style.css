@@ -1,5 +1,5 @@
 :root {
-    --color: #27C7AB;
+    --color: rgba(82, 238, 251, 0.71);
 }
 
 
@@ -51,15 +51,68 @@ body {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     font-size:14px;
     line-height: 40px;
     padding:0 25px;
     display: block;
 }
+
 .page-nav-list a:hover {
     color: var(--color);
 }
 .page-nav-list li:hover > a {
     color: var(--color);
 }
+
+
+.page-nav-sublist {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #000;
+    opacity:0;
+    visibility: hidden;
+    transition: 0.5s all;
+    padding:10px 0;
+}
+.page-nav-list li:hover .page-nav-sublist {
+    visibility: visible;
+    opacity:1;
+}
+.page-nav-sublist:before {
+    content:'';
+    width: 20px;
+    height: 20px;
+    background: #000;
+    display: block;
+    transform: translate(-50%, -50%) rotate(45deg);
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+.page-nav-sublist:after {
+    content:'';
+    background: transparent;
+    height:15px;
+    width:100%;
+    display: block;
+    position: absolute;
+    left:0;
+    top:-15px;
+}
+.page-nav-sublist li {
+    float:none;
+}
+.page-nav-sublist a {
+    font-weight: normal;
+    text-transform: none;
+    line-height: 30px;
+    white-space: nowrap;
+}
+
+
+/* -------------------------------------------- */
+/* MAIN SLIDER*/
+/* -------------------------------------------- */
