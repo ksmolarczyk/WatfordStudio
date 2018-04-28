@@ -10,7 +10,29 @@
 .container {
     width:1035px;
     margin:0 auto;
+    height: auto;
+
 }
+
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
 
 
 body {
@@ -116,3 +138,46 @@ body {
 /* -------------------------------------------- */
 /* MAIN SLIDER*/
 /* -------------------------------------------- */
+
+
+
+
+
+/* -------------------------------------------- */
+/* ABOUT US */
+/* -------------------------------------------- */
+.zeroSection {
+    height: 50px;
+    background: white;
+}
+.firstSection {
+    display: inline-block;
+    border: 2px black solid
+}
+
+.secondSection {
+    display: inline-block;
+    border: 2px black solid;
+}
+.thirdSection {
+    display: inline-block;
+    border: 2px black solid;
+}
+
+h1 {
+    color: yellow;
+    font-size: 20px;
+}
+
+.imgAboutUsLeft {
+    width: 400px;
+    height: auto;
+    float: left;
+}
+
+
+.imgAboutUsRight {
+    width: 400px;
+    height: auto;
+    float: right;
+}
