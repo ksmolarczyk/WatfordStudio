@@ -217,14 +217,29 @@ h1 {
 
 }
 
-.footerPstyle {
+.footerStyle {
     color: white;
     font-size: 14px;
     text-transform: uppercase;
+}
 
+.footerStyleMiddle {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
 
+.footerStyleMiddle > a {
+    text-decoration: none;
+    color: white;
+    display: block;
 }
 
 .smFavicons {
-    width: 30px;
+    width: 28px;
+    margin: 5px;
+}
+
+.footerStyleMiddle a:hover {
+    color: var(--color);
 }
