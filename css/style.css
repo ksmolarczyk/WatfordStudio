@@ -188,34 +188,24 @@ h1 {
 -------------------------------------------- */
 
 .leftBoxContact {
-    width:500px;
+    width:400px;
     height: 500px;
     border: 2px solid darkgray;
-    display: inline-block;
+    float: left;
 }
 
 .rightBoxContact {
-    width:500px;
+    width:624px;
     height: 500px;
     border: 2px solid darkgray;
-    display: inline-block;
+    float: right;
 }
 
-.col-1-2 {
-    display: inline-block;
-    width: 517.5px;
-    vertical-align:top;
-    padding-left: 15px;
-    padding-right:15px;
-    padding-top: 15px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+
 
 .firstSectionContact{
     border: 1px solid bisque;
-    display: flex;
+    display: inline-block;
 }
 /*-------------------------------------------
 CONTACT FORM
@@ -351,7 +341,30 @@ CONTACT FORM
     font-size:0.8rem;
 }
 
+@media screen and (max-width:500px) {
+    .form .submit-btn {
+        display: block;
+        width: 100%;
+    }
+}
 
+/* MAP SECTION*/
+
+
+.mapBox {
+    width: 1024px;
+    display: inline-block;
+}
+
+.mapBoxIframe {
+    -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.mapBoxIframe:hover {
+    -webkit-filter: none;
+    filter: none;
+}
 
 /*-------------------------------------------
   FOOTER
@@ -417,10 +430,3 @@ CONTACT FORM
 /*-------------------------------------------
   MEDIA
 -------------------------------------------- */
-
-@media screen and (max-width:500px) {
-    .form .submit-btn {
-        display: block;
-        width: 100%;
-    }
-}
