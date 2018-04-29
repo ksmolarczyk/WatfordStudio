@@ -183,29 +183,40 @@ h1 {
 }
 
 
+
 /* -------------------------------------------
  CONTACT
 -------------------------------------------- */
 
+.leftBoxContact > h1 {
+    margin: 20px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bolder;
+}
+
 .leftBoxContact {
     width:400px;
     height: 500px;
-    border: 2px solid darkgray;
     float: left;
+    text-align: center;
+    padding-top: 160px;
 }
 
 .rightBoxContact {
     width:624px;
     height: 500px;
-    border: 2px solid darkgray;
     float: right;
 }
-
 
 
 .firstSectionContact{
     border: 1px solid bisque;
     display: inline-block;
+}
+
+.secondSectionContact{
+    margin-top: 20px;
 }
 /*-------------------------------------------
 CONTACT FORM
@@ -226,6 +237,10 @@ CONTACT FORM
 .form .form-row:last-child {
     margin-bottom: 0;
 }
+.form-row-button {
+    text-align: center;
+}
+
 .form input[type=text],
 .form input[type=email],
 .form textarea,
@@ -262,18 +277,19 @@ CONTACT FORM
 .form .submit-btn {
     font-family: sans-serif;
     padding:1rem 2rem;
-    background: #70B81B;
+    background:black;
     border:0;
     border-radius:0.2rem;
     color:#fff;
     font-size:1.1rem;
     font-weight: bold;
     transition: 0.3s background-color;
+
 }
 
 /* checkbox */
 .form .submit-btn:hover {
-    background: #7EC927;
+    background:var(--color);
 }
 .form .checkbox-cnt {
     padding-left:3rem;
@@ -298,7 +314,7 @@ CONTACT FORM
     width:1rem;
     height: 1rem;
     border-radius:0.2rem;
-    background: #70B81B;
+    background:black;
     display: block;
     position: absolute;
     left:50%;
