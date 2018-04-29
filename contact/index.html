@@ -46,6 +46,8 @@
 <div class="container">
     <section class="contactGrid">
         <div class="zeroSection"></div>
+
+        <div class="firstSectionContact">
         <div class="col-1-2">
             <div class="leftBoxContact">
                 <h1>Contact us</h1>
@@ -56,11 +58,39 @@
                 <p>E-mail: malecka_j@yahoo.co.uk</p>
                 <p>Phone: 0 794 736 25 20</p>
             </div>
-            <div class="rightBoxContact">
+        </div>
 
+            <div class="col-1-2">
+            <div class="rightBoxContact">
+                <form class="form" id="contactForm" method="post" novalidate action="/send-scripts.php">
+                    <div class="form-row">
+                        <label for="field-name">Name*</label>
+                        <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+                    </div>
+                    <div class="form-row">
+                        <label for="field-email">Email*</label>
+                        <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+                    </div>
+                    <div class="form-row">
+                        <label for="field-message">Message*</label>
+                        <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <label class="checkbox-cnt">
+                            <input type="checkbox" data-error="Musisz wypełnić pole" name="regulation">
+                            <i class="state" aria-hidden="true"></i>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In libero arcu, vulputate sit amet mattis sit amet, ultrices in erat. Aenean suscipit arcu ac lorem lacinia ut scelerisque turpis commodo.</span>
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" class="submit-btn">
+                            Wyślij
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
-        <div class="col-1-2"></div>
+        </div>
     </section>
 </div>
 
