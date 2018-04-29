@@ -184,7 +184,40 @@ h1 {
 
 
 /* -------------------------------------------
- FOOTER
+ CONTACT
+-------------------------------------------- */
+
+.leftBoxContact {
+    width:500px;
+    height: 500px;
+    border: 2px solid blue;
+    display: inline-block;
+}
+
+.rightBoxContact {
+    width:500px;
+    height: 500px;
+    border: 2px solid blue;
+    display: inline-block;
+}
+
+.col-1-2 {
+    display: inline-block;
+    width: 517.5px;
+    vertical-align:top;
+    padding-left: 15px;
+    padding-right:15px;
+    padding-top: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+
+/*-------------------------------------------
+  FOOTER
 -------------------------------------------- */
 
 .footer{
@@ -213,8 +246,6 @@ h1 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-
-
 }
 
 .footerStyle {
