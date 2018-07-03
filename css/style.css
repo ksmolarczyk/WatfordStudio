@@ -38,7 +38,7 @@
 
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 
@@ -467,17 +467,24 @@ CONTACT FORM
     border: 1px palegoldenrod solid;
     position: relative;
     padding: 50px;
-    padding-top: 80px;
+    margin-top: 90px;
+    margin-bottom: 50px;
 }
 
 .pricingTextHeader {
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
     color: black;
+    font-weight: 500;
+    padding-bottom: 5px;
 }
 .pricingTextHeader2 {
     color: #E01546;
-    font-weight: bold;
+    font-weight: 500;
+}
+
+.pricingText {
+    line-height: 1.5;
 }
 /*-------------------------------------------
   MEDIA
