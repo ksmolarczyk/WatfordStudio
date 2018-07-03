@@ -457,8 +457,28 @@ CONTACT FORM
     color: var(--color);
 }
 
+/* -------------------------------------------- */
+/* PRICING FACE TREATMENTS*/
+/* -------------------------------------------- */
 
+.pricingContainer {
+    width: 1035px;
+    height: auto;
+    border: 1px palegoldenrod solid;
+    position: relative;
+    padding: 50px;
+    padding-top: 80px;
+}
 
+.pricingTextHeader {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: black;
+}
+.pricingTextHeader2 {
+    color: #E01546;
+    font-weight: bold;
+}
 /*-------------------------------------------
   MEDIA
 -------------------------------------------- */
