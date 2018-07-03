@@ -59,4 +59,54 @@ $(function() {
             $elem.addClass('error');
         }
     });
+
+    var checkFieldsErrors = function($elements) {
+        //ustawiamy zmienną na true. Następnie robimy pętlę po wszystkich polach
+        //jeżeli któreś z pól jest błędne, przełączamy zmienną na false.
+        var fieldsAreValid = true;
+        $elements.each(function(i, elem) {
+            var $elem = $(elem);
+            if (elem.checkValidity()) {
+                hideFieldError($elem);
+                $elem.removeClass('error');
+            } else {
+                displayFieldError($elem);
+                $elem.addClass('error');
+                fieldsAreValid = false;
+            }
+        });
+        return fieldsAreValid;
+    };
+
+    $('.form').on('submit', function(e) {
+        e.preventDefault();
+
+        var $form = $(this);
+
+        //jeżeli wszystkie pola są poprawne...
+        if (checkFieldsErrors($inputs)) {
+            var dataToSend = $form.serializeArray();
+            dataToSend = dataToSend.concat(
+                $form.find('input:checkbox:not(:checked)').map(function() {
+                    return {"name": this.name, "value": this.value}
+                }).get()
+            );
+
+            $.ajax({
+                url : $form.attr('action'),
+                method: $form.attr('method'),
+                dataType : 'json',
+                data : dataToSend,
+                success: function(ret) {
+
+                },
+                error : function(error) {
+
+                },
+                complete: function() {
+                }
+            });
+        }
+    })
 })
+
