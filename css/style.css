@@ -359,10 +359,10 @@ CONTACT FORM
 .form input[type=email].error,
 .form textarea.error,
 .form .checkbox-cnt input.error ~ .state {
-    border-color:##E01546;
+    border-color:#E01546;
 }
 .field-error {
-    color:##E01546;
+    color:#E01546;
     padding:0.5rem 0;
     font-size:0.8rem;
 }
