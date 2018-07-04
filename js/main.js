@@ -1,4 +1,5 @@
-// // BANERS CAROUSEL
+
+// BANERS CAROUSEL
 //
 // var slideIndex = 0;
 // carousel();
@@ -91,6 +92,9 @@ $(function() {
                     return {"name": this.name, "value": this.value}
                 }).get()
             );
+            var $submit = $form.find('input:submit');
+            $submit.prop('disabled', 1);
+            $submit.addClass('element-is-busy');
 
             $.ajax({
                 url : $form.attr('action'),
@@ -104,9 +108,15 @@ $(function() {
 
                 },
                 complete: function() {
+                    $submit.prop('disabled', 0);
+                    $submit.removeClass('element-is-busy');
                 }
             });
         }
     })
 })
+
+
+
+
 

@@ -374,8 +374,34 @@ CONTACT FORM
     }
 }
 
-/* -------------- FORM TESTYYYY  ----------------*/
-
+/* -------------- SENDING FORM  ----------------*/
+.elem-is-busy {
+    position: relative;
+    pointer-events: none;
+    opacity:0.5;
+}
+.elem-is-busy::after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-right-color: rgba(0,0,0,0.7);
+    transform: translate(-50%, -50%) rotate(0deg);
+    content:'';
+    animation: rotateSingleLoading 0.3s infinite linear;
+    z-index: 100;
+}
+@keyframes rotateSingleLoading {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
 
 
 
